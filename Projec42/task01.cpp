@@ -1,7 +1,7 @@
 #include "logic.h"	
 #include "util.h"
 
-int get_extreme_index(int* array, int size,bool type) {
+int get_extreme_index(int* array, int size, bool type) {
 	int index = 0;
 
 	for (int i = 0; i < size; i++)
@@ -28,7 +28,7 @@ int calculate_product_between_extreme_elements(int* array, int size) {
 		i_min = t;
 	}
 
-	for (int i = i_max+1; i < i_min; i++)
+	for (int i = i_max + 1; i < i_min; i++)
 	{
 		product *= array[i];
 	}
